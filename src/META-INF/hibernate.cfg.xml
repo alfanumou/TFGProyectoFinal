@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration 
+PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/trabajofingrado</property>
+    <property name="hibernate.connection.username">victor</property>
+    <property name="hibernate.connection.password">victor</property>
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <mapping class="es.tiernogalvan.proyecto.datos.persistencia.POJO.Paciente"/>
+    <mapping class="es.tiernogalvan.proyecto.datos.persistencia.POJO.Medico"/>
+    <mapping class="es.tiernogalvan.proyecto.datos.persistencia.POJO.Hospital"/>
+    <mapping class="es.tiernogalvan.proyecto.datos.persistencia.POJO.SolicitudAnalitica"/>
+    <mapping class="es.tiernogalvan.proyecto.datos.persistencia.POJO.Unidad"/>
+  </session-factory>
+</hibernate-configuration>
